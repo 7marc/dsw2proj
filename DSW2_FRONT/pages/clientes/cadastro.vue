@@ -25,19 +25,30 @@
         {
             return {
                // name: ''
-               message: 'jesus halp me'
+               message: 'hello world'
             }
         },
-            methods:
+            methods: 
         {
-                submitForm()
+                async submitForm()
             {
-                console.log("yeah this shit works");
+                try 
+                {
+                    const response = await $fetch('http://localhost:3000/clientes');
+                    this.clientes = response.data;
+                } 
+                catch (error) 
+                {
+                    console.error('Error fetching clientes:', error);
+                }
             }
         }       
     }
+
 </script>
 
 <style scoped>
 
 </style>
+
+ 

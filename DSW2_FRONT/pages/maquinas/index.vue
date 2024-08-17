@@ -1,8 +1,9 @@
 <template>
     <div>
+      <NuxtLink to="/">DSW2</NuxtLink>
       <h1>Maquinas</h1>
       <ul>
-        <button type="button" class="btn btn-info" @click="submitForm">Cadastrar</button>
+        <NuxtLink to="/maquinas/cadastro" type="button" class="btn btn-info" @click="submitForm">Cadastrar</NuxtLink>
         <li v-for="maquina in maquinas" :key="maquina.id">
           {{ maquina.nome }} - {{ maquina.modelo }} {{ maquina.marca }}{{ maquina.clienteId }}
           <button type="button" class="btn btn-primary" @click="submitForm">Editar</button>

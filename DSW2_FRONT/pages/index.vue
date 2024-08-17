@@ -51,17 +51,10 @@ export default
       <header>
           <nav>
               <NuxtLink to="/">DSW2</NuxtLink>
-              <button type="button" class="btn">Basic</button>
-          <button type="button" class="btn btn-default">Default</button>
-          <button type="button" class="btn btn-primary">Primary</button>
-          <button type="button" class="btn btn-success">Success</button>
-          <button type="button" class="btn btn-info">Info</button>
-          <button type="button" class="btn btn-warning">Warning</button>
-          <button type="button" class="btn btn-danger" >Danger</button>
               <ul>
-                  <li><<NuxtLink to="/about">About</NuxtLink></li>                
-                  <li><<NuxtLink to="/clientes">Clientes</NuxtLink></li>
-                  <li><<NuxtLink to="/maquinas">Maquinas</NuxtLink></li>  
+                  <li><NuxtLink to="/about">About</NuxtLink></li>                
+                  <li><NuxtLink to="/clientes">Clientes</NuxtLink></li>
+                  <li><NuxtLink to="/maquinas">Maquinas</NuxtLink></li>  
               </ul>
           </nav>
       </header>

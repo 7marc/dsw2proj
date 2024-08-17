@@ -38,14 +38,23 @@
                message: 'hello world'
             }
         },
-            methods:
+            methods: 
         {
-                submitForm()
+                async submitForm()
             {
-                console.log("works");
+                try 
+                {
+                    const response = await $fetch('http://localhost:3000/maquinas');
+                    this.clientes = response.data;
+                } 
+                catch (error) 
+                {
+                    console.error('Error fetching clientes:', error);
+                }
             }
         }       
     }
+
 </script>
 
 <style scoped>
